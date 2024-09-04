@@ -1,0 +1,12 @@
+NOTES :
+Setiap akhir belajar, jangan lupa untuk checklist di Microsoft To Do.
+Jika belum dapat sumber belajarnya, tidak usah terpatok disitu terus selama berhari-hari, cukup sehari saja.
+Jika sudah menemukan sumber belajarnya, untuk document taruh di GitHub, untuk yt taruh di playlist.
+
+Pertanyaan :
+1. Apa fundamental concept dari materi ERA?
+2. Berikan contohnya dalam kehidupan nyata.
+
+Sumber :
+YT (ada linknya)
+ChatGPT, Gemini (Tanyakan pertanyaan di atas)
