@@ -4,8 +4,9 @@ Jika belum dapat sumber belajarnya, tidak usah terpatok disitu terus selama berh
 Jika sudah menemukan sumber belajarnya, untuk document taruh di GitHub, untuk yt taruh di playlist.
 
 Pertanyaan :
-1. Apa fundamental concept dari materi ERA?
-2. Berikan contohnya dalam kehidupan nyata.
+1. Jika saya baru belajar hal ini, berikan list materi belajar dari yang basic.
+2. Apa fundamental concept dari materi ERA?
+3. Berikan contohnya dalam kehidupan nyata.
 
 Sumber :
 YT (ada linknya)
