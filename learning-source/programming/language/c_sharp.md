@@ -1,7 +1,3 @@
-Berikut adalah contoh **README.md** yang mencakup materi dasar syntax C#, tipe data, dan LINQ, berdasarkan materi yang telah dijelaskan sebelumnya:
-
----
-
 # **C# Basic Syntax, Data Types, and LINQ Guide**
 
 This guide introduces the basic syntax of C#, covers the most common data types, and provides an overview of LINQ (Language Integrated Query) with best practices and examples.
@@ -288,10 +284,3 @@ foreach (var number in evenNumbers)
   ```
 
 - **Don't Overuse LINQ for Critical Performance Code**: For performance-critical applications, manually looping through collections might be faster.
-
----
-
-This guide covers fundamental C# syntax, data types, control flow, OOP principles, and a deep dive into LINQ. Use this as a reference to get started with C# and leverage LINQ to write efficient, clean, and maintainable code.
-
---- 
-
