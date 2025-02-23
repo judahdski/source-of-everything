@@ -1,0 +1,33 @@
+tweet 1
+LIKE = 100 $PARAM
+
+REPLY = 100 $PARAM
+
+RETWEET = 100 $PARAM
+
+Following all farmers who engage in this tweet!
+
+tweet 3
+Boosting all $PARAM farmers under this post 👇
+
+tweet 4
+$PARAM!! 
+Do LIKE, COMMENT and RT if you are bullish on it 🚀
+
+tweet 5
+⬛️1 LIKE = 100 $PARAM
+⬛️1 RT = 200 $PARAM
+⬛️1 COMMENT = 300 $PARAM
+⬛️1 QUOTE = 400 $PARAM
+⬛️1 Follow = 1000 $PARAM
+
+Lets grow $PARAM farmers! 🧑‍🌾 🚜
+
+tweet 2
+Looks like someone's getting the margin call or stop loss blues! 📉 
+
+But hey, why not take a quick break and hop on the @ParamLaboratory airdrop train? Who knows, it might just be the jackpot you need to save the day! 🚀 
+$PARAM
+
+Just sign up now!! 🔽
+https://paramgaming.com/?referCode=BF686FD257#/signup

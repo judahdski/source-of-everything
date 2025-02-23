@@ -1,0 +1,42 @@
+100% capital allocation:
+60% spot => high risk | memecoin, lowcaps
+30% leverage => low risk | btc, bigcaps
+10% futures => very low risk | btc, usdt
+
+Step by step:
+- masuk cmc
+- check indeks "greed n fear"-nya
+- check overall volume and marketcap
+   - kalo naik berarti itu lagi di top, udah mau turun
+   - kalo turun itu bisa berarti retracement atau "party is over"
+   - kalo adem ayem, bisa jadi market baru mau meluncur ke atas/bawah
+- cari coin narasi trending/narasi memecoin
+- ubah rowsnya jadi 50
+- sorting by market cap (descending)
+- pilih circulating supply >85% (very optional)
+   - overvalue: kalo marketcap tinggi, tapi CS masih rendah
+- buka detail, check
+- cek popularity
+- liat news, community, analytics
+- metrics token/coin/asset enak buat ditrade:
+   - IoL (Indeks of Liquidity) tinggi / volume last 24hr naik gede
+   - Check market : Ada ga KuCoin dan masuk Top tier CEX ga?
+- Tarik garis SMC
+   - Check harga bitcoin (terutama trade di narasi memecoin, itu wajib "check btc first")
+   - Gambar SnR dari bigger timeframe, baru masuk ke lower TF
+   - Apakah dia mendekati key level ato tidak? Biasanya diikuti dengan volume yang tinggi kalo deket key level
+
+
+
+teknikal
+ganti tf 1D (pakai ini klo mau entry)
+- 2+ titik di bawah rsi 40/selevel titiknya dan avg / 1 titik di bawah avg (tpi atas kondisi 1a sudah tercapai)
+- min.2 titik di atas avg / 1 titik di atas avg (tpi atas kondisi 1a+1b sudah tercapai)
+- volume sudah mendekati atau bahkan melewati avg (garis kuning)
+!!! PASTI NAIK !!!
+
+(pake ini klo baru screening)
+guidelines gambar support n resistance
+- ganti tf 1d/4h
+- gambar path (cari mantulnya yang menonjol, bisa bantuan indacator luxalgo juga)
+- gambar yang ada titik mantul ke resistance - break - support
