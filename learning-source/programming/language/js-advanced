@@ -1,0 +1,58 @@
+# **ROADMAP ADVANCED JAVASCRIPT**  
+tambahan:
+
+javascript learning focus-object-array-regex-asynchronous
+
+## **1. Memory Management & Performance Optimization**  
+✅ Garbage Collection & Memory Leaks  
+✅ Performance Profiling (Chrome DevTools, Lighthouse)  
+✅ Optimizing Loops & DOM Manipulation  
+✅ Event Loop Deep Dive (Macrotasks vs Microtasks)  
+
+## **2. Functional Programming (FP) & Advanced Patterns**  
+✅ Pure Functions, Higher-Order Functions  
+✅ Composition vs Inheritance  
+✅ Closures & Currying  
+✅ Memoization & Lazy Evaluation  
+
+## **3. Advanced Error Handling & Debugging**  
+✅ Custom Errors & Stack Tracing  
+✅ Try-Catch vs Async Error Handling  
+✅ Debugging Node.js & Browser (DevTools, Source Maps) 
+
+## **4. Advanced Data Structures & Algorithms in JS**  
+✅ Linked List, Graph, Trie, Set, Map  
+✅ Sorting & Searching Algorithms  
+✅ Big-O Notation & Complexity Analysis  
+
+## **5. JavaScript in Depth: Prototype & Scope**  
+✅ Prototypal Inheritance & Prototype Chain  
+✅ Execution Context & Hoisting  
+✅ Scope Chain & Lexical Scope  
+
+## **6. JavaScript Meta Programming**  
+✅ Reflection & Proxy  
+✅ WeakMap, WeakSet, Symbols  
+✅ Custom Iterators & Generators  
+
+## **7. JavaScript Performance & Rendering Optimization**  
+✅ Virtual DOM vs Real DOM  
+✅ Optimizing React/Vue Components  
+✅ Code Splitting & Lazy Loading  
+
+## **8. Web APIs & Browser Internals**  
+✅ WebSockets & Server-Sent Events  
+✅ WebRTC & WebAssembly  
+✅ IndexedDB & LocalStorage  
+✅ Service Workers & PWA  
+
+## **9. Security in JavaScript**  
+✅ XSS (Cross-Site Scripting) & CSRF Prevention  
+✅ CORS & Same-Origin Policy  
+✅ JWT Authentication & OAuth  
+
+## **10. Tooling & Ecosystem**  
+✅ Monorepos (Nx, Turborepo)  
+✅ Webpack vs Vite vs esbuild  
+✅ Linting & Formatting (ESLint, Prettier)  
+✅ Benchmarking & Profiling  
