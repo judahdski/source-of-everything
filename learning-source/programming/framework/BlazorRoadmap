@@ -1,0 +1,315 @@
+## 🎯 **GOAL UTAMA (1 Bulan):**
+> Jadi **power user** Blazor — ngerti dalam-dalam cara kerja komponennya, state management, performance tuning, dependency injection, hingga interop JS & integrasi API. Target project yang lo bikin harus bisa jadi mini portfolio juga.
+
+---
+
+## 🛣️ Roadmap Belajar Blazor — Mode Praktikal
+
+### 📆 Week 1 — Mastering the Core (Component-Driven Thinking)
+> ⏱ 2-3 jam/hari = 10-15 jam total
+
+**Goal:** Lo ngerti lifecycle, component communication, reusable component, rendering, routing.
+
+#### Materi:
+- Component lifecycle (`OnInitialized`, `OnParametersSet`, `OnAfterRenderAsync`, dst)
+- Component nesting & event callback
+- Parameter vs CascadingParameter
+- Dynamic rendering (`RenderFragment`, `@key`)
+- Routing (default, parameterized, catch-all)
+
+#### Praktik:
+Bikin mini app:
+> **“SimpleBlog”** — basic blog system, ada `PostList`, `PostDetail`, `NewPostForm`, dynamic route via `@page`.
+
+#### Checklist lulus:
+✅ Bisa bikin komponen reusable  
+✅ Ngerti lifecycle mana jalan kapan  
+✅ Bisa passing state antar komponen (parent-child, sibling, etc)  
+✅ Bisa nested route dan parameter route
+
+---
+
+### 📆 Week 2 — Data & State (CRUD + API + State Management)
+> ⏱ 12-15 jam total
+
+**Goal:** Lo ngerti cara integrasi API, fetch async data, manage state antar komponen.
+
+#### Materi:
+- `HttpClient` + REST API (GET, POST, PUT, DELETE)
+- `Task`, `async/await` di Blazor
+- Global state vs local state
+- `Scoped` service & `StateContainer` pattern
+- Error handling + loading state
+
+#### Praktik:
+Kembangin **SimpleBlog** jadi:
+> **“Blog with Admin Panel”** — fitur Create/Edit/Delete post, konsumsi REST API, loading state, centralized state.
+
+#### Checklist lulus:
+✅ Ngerti state management antar halaman  
+✅ Ngerti lifecycle-nya fetch data  
+✅ Ngerti async logic tanpa UI nge-freeze  
+✅ Bisa buat loading/error UX handling
+
+---
+
+### 📆 Week 3 — Blazor + JS Interop, Forms, Validation
+> ⏱ 12-15 jam total
+
+**Goal:** Lo ngerti validasi form tingkat lanjut, custom input, dan integrasi JS kalau Blazor-nya gak cukup.
+
+#### Materi:
+- `EditForm`, `DataAnnotationsValidator`, `ValidationMessage`
+- Custom input components (eg: dropdown, datepicker)
+- JS Interop (call JS from C#, call C# from JS)
+- Inject JS lib (eg: SweetAlert, Chart.js, TinyMCE, etc)
+
+#### Praktik:
+Upgrade app jadi:
+> **“Blog + Editor”** — pake TinyMCE buat nulis post (JS Interop), validasi form strict, dan sweetalert pas delete.
+
+#### Checklist lulus:
+✅ Bisa validasi form komplek  
+✅ Bisa bikin custom form component  
+✅ Bisa bridging Blazor ↔️ JS  
+✅ Bisa inject JS lib pihak ketiga
+
+---
+
+### 📆 Week 4 — Performance, Dependency Injection, Architecture
+> ⏱ 12-15 jam total
+
+**Goal:** Lo ngerti bikin project production ready, maintainable, dan optimal.
+
+#### Materi:
+- Scoped/Transient/Singleton di Blazor
+- Re-render optimization (`@key`, `ShouldRender`)
+- Code splitting dengan `Lazy loading` + `DynamicComponent`
+- Blazor Architecture (project layout, separation of concerns)
+- Role-based Auth (JWT atau dummy token)
+
+#### Praktik:
+Split app jadi 2 area:
+> **“Blog for Public & Admin”** — lazy load page, role-based auth, inject service sesuai scope
+
+#### Checklist lulus:
+✅ Ngerti DI dengan bener  
+✅ Ngerti lazy load buat performa  
+✅ Bisa pisah logic jadi clean architecture  
+✅ Bisa bikin sistem role-based dengan guard page
+
+---
+
+## Bonus After Month 1 (Lanjut bulan berikutnya)
+
+Kalau udah lulus bulan pertama dan masih lanjut:
+- 🔥 Razor Class Libraries (modularisasi UI)
+- 🔥 Server-side Blazor vs WebAssembly deep dive
+- 🔥 SignalR real-time integration
+- 🔥 Testing Blazor Components (bunit)
+- 🔥 Full admin dashboard (pakai MudBlazor atau Radzen)
+
+---
+
+## Tools & Library Pendukung (Recommended):
+- UI Kit: **MudBlazor** (keren + production ready)
+- JS Interop: **TinyMCE**, **Chart.js**, atau lib animasi
+- API mock: **JsonServer** atau dummy API dari RapidAPI
+
+---
+
+## Penutup (Real Talk):
+Belajar Blazor itu bukan sekadar ngoding Razor Page, tapi mikirin bagaimana cara bikin **komponen reusable, scalable, dan future-proof**. Fokus ke struktur dan pattern yang bikin lo bisa deliver fitur cepat, tapi tetap bisa di-maintain tim lain.
+
+Kalau lo gas roadmap ini dengan konsisten, 1 bulan aja udah cukup bikin lo keliatan “senior” di mata tim Blazor kantor. Sisanya tinggal scale ke domain besar, testing, dan realtime.
+
+---
+
+**Week 1 Project: SimpleBlog** — tujuannya buat ngelatih struktur component, routing, komunikasi antar komponen, dan layouting dasar. Ini bisa jadi fondasi solid buat minggu-minggu selanjutnya.
+
+---
+
+## 🧱 Struktur App `SimpleBlog`
+
+```
+SimpleBlog/
+├── Pages/
+│   ├── Index.razor           => Home Page
+│   ├── PostList.razor        => List semua post
+│   ├── PostDetail.razor      => Detail post per ID
+│   ├── NewPost.razor         => Form tambah post
+├── Components/
+│   ├── PostCard.razor        => Komponen kartu post
+├── Models/
+│   └── Post.cs               => Model post (Id, Title, Content, Author, etc)
+├── Services/
+│   └── PostService.cs        => Simulasi data post (hardcoded)
+├── wwwroot/
+│   └── css/app.css           => Styling dasar
+├── App.razor
+├── MainLayout.razor
+├── Program.cs
+```
+
+---
+
+## 🔧 Basic Model `Post.cs`
+```csharp
+namespace SimpleBlog.Models
+{
+    public class Post
+    {
+        public int Id { get; set; }
+        public string Title { get; set; } = "";
+        public string Content { get; set; } = "";
+        public string Author { get; set; } = "";
+        public DateTime Date { get; set; } = DateTime.Now;
+    }
+}
+```
+
+---
+
+## 🧠 Service Simulasi `PostService.cs`
+```csharp
+using SimpleBlog.Models;
+
+namespace SimpleBlog.Services
+{
+    public class PostService
+    {
+        private List<Post> _posts = new List<Post>
+        {
+            new Post { Id = 1, Title = "Hello Blazor", Content = "This is your first post!", Author = "Admin" },
+            new Post { Id = 2, Title = "Second Post", Content = "Learning Blazor is fun!", Author = "John" }
+        };
+
+        public List<Post> GetPosts() => _posts;
+
+        public Post? GetPostById(int id) => _posts.FirstOrDefault(p => p.Id == id);
+
+        public void AddPost(Post post)
+        {
+            post.Id = _posts.Max(p => p.Id) + 1;
+            post.Date = DateTime.Now;
+            _posts.Add(post);
+        }
+    }
+}
+```
+
+---
+
+## 🛠 `Program.cs`
+Tambahkan service `PostService`:
+```csharp
+builder.Services.AddSingleton<PostService>();
+```
+
+---
+
+## 📃 Routing `App.razor`
+```razor
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <p>Page not found!</p>
+    </NotFound>
+</Router>
+```
+
+---
+
+## 🔧 Contoh Page: `PostList.razor`
+```razor
+@page "/posts"
+@inject PostService PostService
+
+<h2>All Posts</h2>
+
+@foreach (var post in PostService.GetPosts())
+{
+    <PostCard Post="post" />
+}
+```
+
+---
+
+## 💡 Komponen `PostCard.razor`
+```razor
+@using SimpleBlog.Models
+@inject NavigationManager Nav
+@code {
+    [Parameter] public Post Post { get; set; } = new();
+}
+<div @onclick="() => Nav.NavigateTo($"/post/{Post.Id}")" class="card">
+    <h3>@Post.Title</h3>
+    <p>by @Post.Author — @Post.Date.ToShortDateString()</p>
+</div>
+```
+
+---
+
+## 🔍 Detail Page `PostDetail.razor`
+```razor
+@page "/post/{Id:int}"
+@inject PostService PostService
+
+@code {
+    [Parameter] public int Id { get; set; }
+    private Post? post;
+
+    protected override void OnInitialized()
+    {
+        post = PostService.GetPostById(Id);
+    }
+}
+
+@if (post is null)
+{
+    <p>Post not found.</p>
+}
+else
+{
+    <h2>@post.Title</h2>
+    <p><em>by @post.Author - @post.Date</em></p>
+    <p>@post.Content</p>
+}
+```
+
+---
+
+## 🆕 New Post Page `NewPost.razor`
+```razor
+@page "/new"
+@inject PostService PostService
+@inject NavigationManager Nav
+
+<EditForm Model="@newPost" OnValidSubmit="@HandleValidSubmit">
+    <InputText @bind-Value="newPost.Title" placeholder="Title" />
+    <InputTextArea @bind-Value="newPost.Content" placeholder="Content" />
+    <InputText @bind-Value="newPost.Author" placeholder="Author" />
+    <button type="submit">Add Post</button>
+</EditForm>
+
+@code {
+    private Post newPost = new();
+
+    private void HandleValidSubmit()
+    {
+        PostService.AddPost(newPost);
+        Nav.NavigateTo("/posts");
+    }
+}
+```
+
+---
+
+## 🧪 Test Aplikasi
+- Akses `/posts` untuk lihat list
+- Klik card → navigasi ke `/post/{id}`
+- Tambah post di `/new` → balik ke `/posts` dan muncul post baru
+
+---
